@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash \"C:/Users/ghoot/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5/skills/brainstorming/scripts/start-server.sh\" --project-dir \"C:/Users/ghoot/projects/translate\")",
+      "Bash(xargs cat:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm install:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv add:*)",
+      "Bash(timeout 8 npm start)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(pkill -f \"electron .\")",
+      "Bash(taskkill /IM electron.exe /F)",
+      "Bash(uv run:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "Bash(taskkill /F /IM electron.exe)",
+      "Bash(exit 0)",
+      "Bash(cmd /c \"taskkill /F /IM electron.exe\")",
+      "Bash(cmd /c \"tasklist | findstr electron\" 2>&1)",
+      "Bash(git -C C:/Users/ghoot/projects/translate add main.js)",
+      "Bash(git -C C:/Users/ghoot/projects/translate commit -m \"fix: suppress Chromium GPU shader disk cache errors on Windows\")",
+      "Bash(git -C C:/Users/ghoot/projects/translate add whisper_worker.py)",
+      "Bash(git -C C:/Users/ghoot/projects/translate commit -m \"fix: rename Whisper output from audio stem to expected srt_path\")",
+      "Bash(git -C C:/Users/ghoot/projects/translate add status.md)",
+      "Bash(git -C C:/Users/ghoot/projects/translate commit -m \"docs: update status.md with latest streaming fix\")",
+      "Bash(cp /c/Users/ghoot/projects/translate/main.js /d/translate/)",
+      "Bash(cp /c/Users/ghoot/projects/translate/cache.js /d/translate/)",
+      "Bash(cp /c/Users/ghoot/projects/translate/worker.js /d/translate/)",
+      "Bash(cp /c/Users/ghoot/projects/translate/preload.js /d/translate/)",
+      "Bash(cp /c/Users/ghoot/projects/translate/package.json /d/translate/)",
+      "Bash(ls /d/translate/node_modules/.bin/electron*)"
+    ]
+  }
+}

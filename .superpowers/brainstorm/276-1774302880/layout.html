@@ -1,0 +1,74 @@
+<h2>App Layout — Japanese Subtitle Viewer</h2>
+<p class="subtitle">Proposed UI for the Electron desktop app. Click an option to select it.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#111;border-radius:6px;padding:12px;font-family:monospace;font-size:11px;color:#ccc;">
+        <div style="background:#1a1a2e;border-radius:4px;padding:8px;margin-bottom:8px;text-align:center;color:#888;font-size:10px;">
+          ┌─────────────────────────────────┐<br>
+          │                                 │<br>
+          │        VIDEO PLAYS HERE         │<br>
+          │       (no subtitles shown)      │<br>
+          │                                 │<br>
+          │                                 │<br>
+          └─────────────────────────────────┘
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;background:#222;border-radius:4px;padding:6px;">
+          <span style="color:#4af">▶</span>
+          <div style="flex:1;height:4px;background:#444;border-radius:2px;position:relative;">
+            <div style="width:35%;height:100%;background:#4af;border-radius:2px;"></div>
+          </div>
+          <span style="color:#888;font-size:9px">01:24 / 04:10</span>
+          <span style="background:#e44;color:#fff;border-radius:3px;padding:2px 7px;font-size:9px;cursor:pointer;">TRANSLATE</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Button in player controls</h3>
+      <p>TRANSLATE button sits in the video control bar alongside play/seek. Clean, integrated feel. Button is always visible.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#111;border-radius:6px;padding:12px;font-family:monospace;font-size:11px;color:#ccc;">
+        <div style="background:#1a1a2e;border-radius:4px;padding:8px;margin-bottom:8px;text-align:center;color:#888;font-size:10px;position:relative;">
+          ┌─────────────────────────────────┐<br>
+          │                                 │<br>
+          │        VIDEO PLAYS HERE         │<br>
+          │       (no subtitles shown)      │<br>
+          │                                 │<br>
+          │ <span style="background:#e44;color:#fff;border-radius:3px;padding:1px 5px;font-size:9px;">T</span>                               │<br>
+          └─────────────────────────────────┘
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;background:#222;border-radius:4px;padding:6px;">
+          <span style="color:#4af">▶</span>
+          <div style="flex:1;height:4px;background:#444;border-radius:2px;position:relative;">
+            <div style="width:35%;height:100%;background:#4af;border-radius:2px;"></div>
+          </div>
+          <span style="color:#888;font-size:9px">01:24 / 04:10</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Floating button over video</h3>
+      <p>A small floating "T" button overlaid on the video (bottom-left corner). Minimal distraction during playback; hover to reveal full label.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <h3>When the button is pressed — subtitle overlay</h3>
+  <p class="subtitle">Video pauses; this overlay appears over the video</p>
+  <div style="background:#111;border-radius:6px;padding:12px;max-width:500px;">
+    <div style="background:#1a1a2e;border-radius:4px;padding:16px;text-align:center;position:relative;">
+      <div style="color:#888;font-size:10px;font-family:monospace;margin-bottom:12px;">[ video frame — paused ]</div>
+      <div style="background:rgba(0,0,0,0.75);border-radius:6px;padding:12px 16px;border-left:3px solid #e44;">
+        <div style="color:#888;font-size:9px;font-family:monospace;margin-bottom:6px;">01:19 – 01:24</div>
+        <div style="color:#fff;font-size:13px;line-height:1.6;">"Wait, that's not right! You have to eat it all before the time runs out!"</div>
+      </div>
+      <div style="margin-top:8px;color:#888;font-size:9px;font-family:monospace;">Press play to continue</div>
+    </div>
+  </div>
+</div>
